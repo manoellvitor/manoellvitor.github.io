@@ -1,0 +1,427 @@
+/*IMPORTING ANOTHER CSS FILE TO THIS FILE*/
+@import url('../css/font.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    /* FONT-FAMILY */
+    --Abel:'Abel', cursive;
+    --Anton:'Anton', cursive;
+    --Josefin:'Josefin', cursive;
+    --Lexend:'Lexend', cursive;
+    --Livvic:'Livvic', cursive;
+
+    /* FONT-COLORS */
+    --text-gray: #3f4959;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #fff;
+    --midnight: #546A7B;
+    --orange: #D64933;
+
+    /* GRADIENT-COLORS */
+    --sky: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+/**************** GLOBAL STYLE ****************/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Abel);
+    font-size: 18px;
+    color: var(--white);
+    text-align: justify;
+    text-indent: 10%;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 37px;
+}
+
+h2{
+    font-family: var(--Lexend);
+    font-size: 20px;
+}
+
+h3{
+    font-family: var(--Josefin);
+    font-size: 15px;
+}
+
+button.btn{
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    outline: none;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+/*********X****** GLOBAL STYLE *********X******/
+
+/**************** NAVBAR ****************/
+
+.nav{
+    background: white;
+    padding: 0 32px;
+    height: 0px;
+    min-height: 80px;
+    overflow: hidden;
+    transition: height 1s ease-in-out !important;
+}
+
+.nav-menu{
+    justify-content: space-between;
+}
+
+.toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.collapse{
+    height: 60%;
+}
+
+.toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 0;
+}
+
+.toggle-icons i{
+    font-size: 30px;
+    color: var(--text-gray);
+}
+
+.nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav-link{
+    padding: 24px 15px;
+    font-size: 20px;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid var(--orange);
+}
+
+.nav-brand img{
+    width: 250px;
+    margin-top: -30px;
+    margin-right: -120px;
+    margin-left: -50px;
+}
+
+.social{
+    padding: 20px 0;
+}
+
+.social i{
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.social i:hover{
+    padding: 0 10px;
+    color: var(--orange);
+}
+
+/*********X****** NAVBAR *********X******/
+
+/**************** MAIN ****************/
+
+/*------------- Site Title -------------*/
+
+.site-title{
+    /*If you want to try diferent Backgrounds, just go to*/
+    /*images bg-01 to bg-08*/
+    background: url('../assets/bg-01.jpg');
+    background-size: cover;
+    height: 130vh;
+    justify-content: center;
+}
+
+.site-background{
+    padding-top: 150px;
+    text-align: center;
+    color: var(--white);
+}
+
+.site-title h1,h2{
+    margin: 4.5px;
+}
+
+.resume{
+    margin: 0 auto;
+    text-align: justify;
+    font-family: var(--Livvic);
+    font-size: 20px;
+    color: var(--white);
+    padding: 10px;
+    text-indent: 10%;
+}
+
+.btn{
+    margin: 27px;
+    background: var(--sky);
+}
+
+.btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/*------X------ Site Title ----X--------*/
+
+/*------------- Site Content -------------*/
+
+.site-content-2{
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto;
+    background: gray;
+    opacity: 70%;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+}
+
+.site-content{
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto;
+    background: gray;
+    opacity: 70%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+}
+
+.site-content-title h2{
+    color: var(--white);
+}
+
+.site-content-content h3{
+    font-size: 20px;
+}
+
+.site-content-content li{
+    font-size: 18px;
+    font-family: var(--Livvic);
+}
+
+/*------X------ Site Content ------X------*/
+
+/*------------- Projects Carousel -------------*/
+
+.content{    
+   width: 100%;
+}
+
+.container{
+    width: 100%;
+}
+
+.project-post{
+   padding-top: 90px; 
+   width: 100%;
+}
+
+.project-content{
+    background: #9EA3B0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 45px 30px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-title{
+    padding: 15px 0;
+}
+
+.project-title h2{
+    color: var(--white);
+}
+
+.owl-nav{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav span{
+    color: var(--orange) !important;
+    background: transparent !important;
+    font-size: 40px !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    background: transparent !important;
+    outline: none;
+}
+
+/*------X------ Projects Carousel ----X--------*/
+
+/*********X****** MAIN *********X******/
+
+/**************** FOOTER ****************/
+.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.footer-container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 45px 15px;
+}
+
+.footer-container h2{
+    color: var(--white);
+}
+
+.form{
+    background: black;
+    display: inline-block;
+}
+
+.form input{
+    padding: 12px 12px;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--Josefin);
+    font-size: 15px;
+    width: 74%;
+    outline: none;
+}
+
+.form span{
+    background: var(--sky);
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.contact i{
+    color: var(--white);
+    padding: 5px;
+}
+
+.rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+/*********X****** FOOTER *********X******/
+
+
+
+/**************** VIEWPORT <= 750PX ****************/
+@media only screen and (max-width: 750px){
+    .nav-menu, .nav-items{
+        flex-direction: column !important;
+    }
+
+    .toggle-collapse{
+        display: initial !important;
+    }
+
+    .site-title{
+        height: 1200px !important;
+        
+    }
+
+    .site-content{
+        width: 80% !important;
+    }
+
+    .site-content-2{
+        width: 90% !important;
+    }
+
+    .footer-container{
+        display: grid !important;
+        grid-template-columns: 100% !important;
+    }
+
+    .social{
+        display: inline;
+    }
+}
+
+
+/*********X****** VIEWPORT <= 750PX *********X******/
+
+/**************** VIEWPORT <= 520PX ****************/
+@media only screen and (max-width: 520px){
+    
+    .site-title{
+        height: 1350px !important;
+    }
+    
+    .footer-container{
+        grid-template-columns: 100% !important;
+    }
+
+    .site-content-2{
+        width: 90% !important;
+    }
+
+    .site-content{
+        height: auto !important;
+    }
+
+}
+
+
+/*********X****** VIEWPORT <= 520PX *********X******/
+
+/**************** Exemple ****************/
+/*********X****** Exemple *********X******/
